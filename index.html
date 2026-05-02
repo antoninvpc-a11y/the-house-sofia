@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>The House Sofia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; font-family: serif; background:black; color:white; }
+    .hero { height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; position:relative;}
+    video { position:absolute; width:100%; height:100%; object-fit:cover; opacity:0.4;}
+    .content { position:relative; z-index:1;}
+    .booking { background:white; color:black; padding:20px; margin:-80px auto; width:80%; border-radius:20px;}
+    input, select { padding:8px; margin:5px;}
+    .btn { background:black; color:white; padding:10px 20px; border:none;}
+    .section { padding:40px; text-align:center;}
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <video autoplay muted loop>
+    <source src="https://www.w3schools.com/howto/rain.mp4">
+  </video>
+  <div class="content">
+    <h1>The House</h1>
+    <p>Бутиков уют в центъра на София</p>
+  </div>
+</div>
+
+<div class="booking">
+  <input type="date">
+  <input type="date">
+  <select><option>2 гости</option></select>
+  <select>
+    <option>Double</option>
+    <option>Studio</option>
+    <option>Apartment</option>
+  </select>
+  <button class="btn">Резервирай</button>
+</div>
+
+<div class="section">
+  <h2>Защо да изберете нас</h2>
+  <p>Топ локация • Тишина • Уют • Цена</p>
+</div>
+
+<div class="section">
+  <iframe width="100%" height="300"
+    src="https://maps.google.com/maps?q=Verila%202%20Sofia&output=embed">
+  </iframe>
+</div>
+
+</body>
+</html>
